@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: linear-gradient(to bottom, #009999 0%, #666699 100%);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(255, 255, 255);
+    ;
+}
+
+.input {
+    margin-bottom: 20px;
+    padding: 40px;
+    width: 80%;
+    text-align: right;
+    font-size: 50px;
+    border-radius: 20px;
+    border: none;
+}
+
+.input:hover {
+    border: 2px solid goldenrod;
+    color: aliceblue;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+}
+
+.buttons button {
+    border-radius: 50%;
+    height: 80px;
+    border: none;
+    font-size: 30px;
+}
+
+.buttons button:hover {
+    font-size: 40px;
+}
+
+.container .ac {
+    grid-column: 1 / 3;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #33ccff -23%, #cc0000 91%);
+    color: aliceblue;
+    height: 50px;
+}
+
+.container .enter {
+    grid-column: 3 / 5;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #33ccff 0%, #cc66ff 100%);
+    color: aliceblue;
+    height: 50px;
+}
+
+
+.operators {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to bottom, #33ccff -23%, #00cc99 91%);
+  
+}
+
+@media (max-width:480px) and (min-width:320px) {
+    .container {
+        width: 80%;
+        max-width: 400px;
+    
+    }    
+
+    .input {
+        padding: 30px;
+        width: 82%;
+        font-size: 30px;
+   
+    }
+.buttons button {
+    height: 40px;
+
+}
+
+.container .enter {
+    font-size: 20px;
+ 
+}
+
+.container .enter:hover {
+    font-size: 25px;
+}
+
+.container .ac {
+    font-size: 20px;
+
+}
+.container .ac:hover {
+    font-size: 25px;
+}
+}
